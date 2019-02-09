@@ -1,0 +1,12 @@
+<project default = "compile">
+<property name="src.java.dir" lacation="./src/main/java/converter"/>
+<property name="src.test.dir" lacation="./src/main/test"/>
+<property name="result.dir" lacation="./target"/>
+<property name="result.javaclasses.dir" lacation="${result.dir}/testclasses"/>
+<property name="result.jar.file" lacation="./myProduct.jar"/>
+
+<target name = "compile">
+<mkdir dir ="${result.javaclasses.dir}"/>
+<javac srcdir ="${src.java.dir}"  destdir ="${result.jacaclasses.dir}" debug="true" includeantruntime ="false">
+</javac>
+</target>
